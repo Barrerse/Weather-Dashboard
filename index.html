@@ -8,10 +8,12 @@
 
     <!-- CSS LINK -->
     <link rel="stylesheet" href="./assets/style.css">
-    <!-- BOOTSTRAP & jDELIVER CDN FOR CSS -->
+    <!-- BOOTSTRAP AJAX & jDELIVER CDN FOR CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
 </head>
 
@@ -24,23 +26,32 @@
 </div>
 
 <!-- SEARCH BAR -->
-<div class="container">
-        
-    <div class="row r1">
-    <div class="col-md-4 c1">
+<main class="flex-row justify-space-between">
+    <div class="col-12 col-sm-12 col-md-4 float-left">
 
-        <h4>Search for a City:</h4>
-        
-        <form id="city-form">
-            <input type="text" id="city-input"/>
-            <button type="button" id="add-city" class="btn btn-primary">
-                <i class="fas fa-search"></i>
-            </button>
-        </form>
-
-        <div id="buttons-view" class="card" style="width: 18rem;">
-            <ul class="list-group list-group-flush"></ul>
+      <div class="card">
+        <h3 class="card-header text-uppercase">Search for a city</h3>
+        <div id="user-form" class="card-body">
+          <input type="text" id="myInput" placeholder="City Name..."/>
+          <button class="btn" id="searchBtn">Search</button>
         </div>
+      </div>
+<!-- HISTORY SECTION -->
+      <div class="card history">
+        <h3 class="card-header text-uppercase">Search History</h3>
+      </div>
+    </div>
+<!-- CURRENT WEATHER AND FORECAST -->
+    <div class="col-12 col-sm-12 col-md-8 float-right">
+      <div>
+        <h2 class="subtitle text-uppercase bg-light">Current Weather</h2>
+        <div class="city"></div>
+      </div>
+
+      <div>
+        <h2 class="subtitle text-uppercase bg-light">5 Day forecast</h2>
+        <div class="five-day"></div>
+      </div>
     </div>
 
 
