@@ -24,7 +24,7 @@ THEN I am again presented with current and future conditions for that city
 ## Application URL
 Please use the following link to access the deployed application:
 
-[Site](https://iamlucho.github.io/weather-dashboard/)
+[Check out the website](https://barrerse.github.io/Weather-Dashboard/)
 
 ## Screenshot
-![Site Screenshot](/assets/images/screenshot.png)
+![Comming soon]()
