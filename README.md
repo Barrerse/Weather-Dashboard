@@ -1,5 +1,5 @@
 # Server-Side APIs Challenge: Weather Dashboard
-A dashboard to show weather information from a city chosen by the user.
+A dashboard to show weather information from a city chosen by the user. This uses [OpenWeather API](https://openweathermap.org/forecast5) to collect a 5 day weather forcase and searching by City Name it will display it on the screen.
 
 ## User Story
 ```
@@ -27,4 +27,4 @@ Please use the following link to access the deployed application:
 [Check out the website](https://barrerse.github.io/Weather-Dashboard/)
 
 ## Screenshot
-![Comming soon]()
+![Untitled](https://user-images.githubusercontent.com/108836644/201106781-9fd5a225-df30-484f-8992-15ddac3485de.png)
