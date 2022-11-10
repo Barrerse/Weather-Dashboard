@@ -1,5 +1,5 @@
 # Server-Side APIs Challenge: Weather Dashboard
-A dashboard to show weather information from a city chosen by the user. This uses [OpenWeather API](https://openweathermap.org/forecast5) to collect a 5 day weather forcase and searching by City Name it will display it on the screen.
+A dashboard to show weather information from a city chosen by the user. This uses [OpenWeather API](https://openweathermap.org/forecast5) to collect a 5 day weather forcast and searching by City Name it will display it on the screen.
 
 ## User Story
 ```
@@ -20,6 +20,9 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
 WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 ```
+
+##About
+This was created using HTML, CSS, JavaScript, and the Bootstrap framework. 
 
 ## Application URL
 Please use the following link to access the deployed application:
