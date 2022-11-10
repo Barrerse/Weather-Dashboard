@@ -1,23 +1,3 @@
-// Code given by the professor 
-// function get5DaysForecast(apiResponse) {
-//     return apiResponse.list.reduce(function(days,current) {
-//         var currentDate=current.dt_txt.split(" ")[0];
-//         if(!days.find(function(day) {
-//             return day.dt_txt.includes(currentDate);
-//         })) {
-//             return [...days,current];
-//         }
-//         return days;
-//     },[])
-// }
-
-// //Example usage
-// fetch("api.openweathermap.org/data/2.5/forecast?lat=44.34&lon=10.99&appid={API key}").then(function(response){
-//    return response.json();
-// }).then(function(data){
-//    var fiveDaysForecast=get5DaysForecast(data);
-//    console.log(fiveDaysForecast);
-// });
 
 // SEARCH HISTORY FUNCTION 
 
@@ -39,7 +19,7 @@
 // var inWind = $("#d0-wind");
 // var inUV = $("#d0-UV");
 
-// FUNCTION TO DISPLAY WEATHER
+// FUNCTION TO DISPLAY WEATHER BONUS UV!
 
 // function weatherDisplay(weather){
 // inWind.text(weather[0].wind);
@@ -60,14 +40,6 @@
 // }
 // }
 
-// BUTTON FUNCTION 
-// $("#searchButton").on("click", function(){
-//   var cityList = $("cityInput").val();
-//   $("#cityInput").val("");
-//   saveHistory(cityList);
-//   getCoordinates(cityList);
-// }
-// );
 
 // var APIkey = "d882ee08c41452ba3fd165e1c9e8e0a8";
 
@@ -76,6 +48,21 @@
 var APIkey = "d882ee08c41452ba3fd165e1c9e8e0a8";
 var baseURL = "https://api.openweathermap.org/data/2.5/forecast?";
 
+
+
+//BUTTON FUNCTION
+
+// $("#searchbtn").on("click", function () { 
+//   var inputcity = $("#cityInput").val();
+//   $("#cityInput").val("");
+// //FUNCTIONS 
+//   get5DaysForecast(inputcity);
+//   storeWeather(inputcity); 
+//   // loadButtons();
+ 
+// });
+
+// FORECAST FUNCTION
 
 function get5DaysForecast(apiResponse) {
   return apiResponse.list.reduce(function(days,current) {
@@ -96,3 +83,13 @@ fetch(baseURL + "lat=44.34&lon=10.99&appid=" + APIkey).then(function(response){
  var fiveDaysForecast=get5DaysForecast(data);
  console.log(fiveDaysForecast);
 });
+
+var btnDsn = document.querySelector("#searchbtn");
+
+
+// (function (){
+// 	btnDsn.onclick = function() {
+// 		btnDsn.textContent = name;
+// 	};
+// })();
+
